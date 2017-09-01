@@ -1,2 +1,3 @@
 # ojrebuild
-JRE from ojdkbuild/ojdkbuild
+OpenJRE from [ojdkbuild](https://github.com/ojdkbuild/ojdkbuild)
+

@@ -1,0 +1,12 @@
+language: python
+python: 
+  - 2.7
+install: "pip install -r requirements.txt"
+script: python main.py
+deploy:
+  provider: releases
+  api_key:
+    secure: fEpn+NDi8Qm/UQAJXiC/oxklpIx4xRJ8z9WUBhbMJsn06x52m3lkjGx67B2C7Acq6NkHBfGq7POt+5yfZnSIKzsmS9BXsFvpMk86dS4BR2Q9/vvRJ+Yk1SUTqXUm3KMMh+hJvallNWwpk4WHkahEC71/JiX96pQt+iWyBtVRzZvf8wDiRa80utWi/nRfhTlfH6TvMXeQbhLcIrWe1N7xqkiklx/uUkcECfqzpmM8vHVo8gl6pCi7gDsTXiq4sDG2r7xFz9DqAg+oO1eqE0F+QNDrdx/jRn/ZPwfouM+Bh13SBiOlaN4z3+lL/PMDFUnPCECCnUdk+og/xvBpN3PnsZcYxwMBIT6YSq1yku0GmZYEx9gCLSmThFe3r8CBYH+3fjEKgVeXijvtZsNGdrH02WnVbh60MlE3BSg6sgdgz1FcWhdZVw1kqoAdkv7aC7IslfRpX4QksWGAJFBga1evbRD3rkMs6+8JZ4IaR7I6om34ls8SLOSeqAuVZoHlPeAuN9aLMxHidRlkrtTictqL94kiLTtP5txAIZezis3xOkF/wCdHivFBX2OSb8hOdot5zW7I6ZpRnqK1iD+ZK8/JrJmmXjk29MN9xT+UKRuQKQU6lZDMcrIT8Xad4g0RnYPhMYFA3OaMOguZnfPjBvG75gtaZPib3GsxetP5b0jrYGc=
+  file: "*.zip"
+  on:
+    repo: Indexyz/ojrebuild
