@@ -56,8 +56,10 @@ def downloadAndUnzip(item):
         if item.startswith("java"):
             javaDirName = item
             break
-        
-    createZip(str(rDir) + "/" + javaDirName + "/jre", tName.replace("openjdk", "openjre"))
+    
+    if not os.path.exists("release"):
+        os.makedirs("release")
+    createZip(str(rDir) + "/" + javaDirName + "/jre", "release/" + tName.replace("openjdk", "openjre"))
     shutil.rmtree(rDir)
 
 def main():
